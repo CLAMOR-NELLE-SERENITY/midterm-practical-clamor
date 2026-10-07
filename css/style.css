@@ -1,0 +1,184 @@
+/* --- Global Reset & Box Model --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary: #e02424;
+  --dark: #111827;
+  --light: #dedee3;
+  --card-bg: #ffffff;
+  --text: #111827;
+  --radius: 12px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: var(--text);
+  background-color: var(--light);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+}
+
+/* --- Header & Navigation --- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--dark);
+  color: white;
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  color: var(--primary);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--primary);
+}
+
+/* --- Buttons --- */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary);
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: var(--radius);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #b91c1c;
+}
+
+/* --- Main Layout Container --- */
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* --- Hero Section --- */
+#hero {
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: var(--radius);
+  margin-bottom: 2rem;
+}
+
+.hero-content {
+  margin-bottom: 1.5rem;
+}
+
+.hero-content h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* --- Main Article & Aside Layout --- */
+#content {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+article {
+  flex: 2;
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: var(--radius);
+}
+
+aside {
+  flex: 1;
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: var(--radius);
+}
+
+aside hr {
+  margin: 1rem 0;
+  border: 0;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* --- Featured Games Section --- */
+#games {
+  margin-bottom: 2rem;
+}
+
+#games h2 {
+  margin-bottom: 1rem;
+}
+
+.game-grid {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.game-card {
+  flex: 1;
+  background-color: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  border-left: 5px solid var(--primary);
+}
+
+/* --- Form Section --- */
+#join {
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: var(--radius);
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-group input, 
+.form-group select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+}
+
+/* --- Footer --- */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: var(--dark);
+  color: white;
+  margin-top: 3rem;
+}
